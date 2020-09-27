@@ -6,7 +6,7 @@ COPY app.cpp ./
 
 RUN cmake . && make
 
-FROM ubuntu:bionic
+FROM ubuntu:focal
 
 WORKDIR /cpp /
 
