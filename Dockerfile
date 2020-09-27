@@ -2,14 +2,14 @@ FROM cpp-build-base:0.1.0 AS build
 
 WORKDIR /cpp
 
-COPY CMakeLists.txt main.cpp ./
+COPY app.cpp ./
 
 RUN cmake . && make
 
 FROM ubuntu:bionic
 
-WORKDIR /opt/hello-world
+WORKDIR /cpp /
 
-COPY --from=build /src/helloworld ./
+COPY --from=build /src/app.cpp ./
 
 CMD ["./helloworld"]
