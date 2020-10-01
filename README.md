@@ -1,6 +1,5 @@
 # arduinosensor
-Just a little arduino project with a sensor and a 16x2 lcd to show the distance of an object.
-
+Arduino project to show the distance of an object with a sensor/display :D
 # Tools and Software used:
 
 - [lcd display]()
